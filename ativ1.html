@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Atividade 01
+    </h1>
+    <p>Calcular a comissão de determinado fúncionario.</p>
+
+    <p>Nome do funcionario:<span id="funcionario"></span>
+    <P>Quantidade de produtos vendidos: <span id="quantidadeProdutos"></span></P>
+    <p>Comissão do mês:<span id="comissao"></span></p>
+
+    <script>
+        let nome = prompt("Digite o nome do fúncionario")
+        let quantidadeProdutos = Number(prompt("Digite a quantidade de produtos vendidos"))
+        let comissao
+
+        if (quantidadeProdutos <= 250) {
+            comissao = quantidadeProdutos * 1.0;
+        } else if (quantidadeProdutos <= 500) {
+            comissao = quantidadeProdutos * 1.5;
+        } else {
+            comissao = quantidadeProdutos * 2.0;
+        }
+        
+
+       
+       
+        document.getElementById('funcionario').innerHTML = nome;
+        document.getElementById('quantidadeProdutos').innerHTML = quantidadeProdutos;
+        document.getElementById('comissao').innerHTML = comissao;
+        
+    </script>
+    
+</body>
+</html>

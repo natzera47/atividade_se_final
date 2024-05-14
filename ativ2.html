@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Faça um algoritmo para ler uma data (por exemplo, 12/02/2000) e imprima o dia, o nome do mês e o ano (por exemplo, 12 de fevereiro de 2000).</h1>
+    <p>Dia:<span id="d"></span></p>
+    <p>Mês:<span id="m"></span></p>
+    <p>Ano:<span id="a"></span></p>
+    <p>Resultado:<span id="r"></span></p>
+
+    <script>
+        let dia = Number(prompt("Digite o dia"))
+        let mes = Number(prompt("Digite o mês"))
+        let ano = Number(prompt("Digite o ano"))
+        let resultado
+
+        
+
+        if(mes == "01" && mes == "1"){
+            mes = "Janeiro"
+        }
+
+        if(mes == "02" && mes == "2"){
+            mes = "Fevereiro"
+        }
+
+        if(mes == "03" && mes == "3"){
+            mes = "Março"
+        }
+
+        if(mes == "04" && mes == "4"){
+            mes = "Abril"
+        }
+
+        if(mes == "05" && mes == "5"){
+            mes = "Maio"
+        }
+
+        if(mes == "06" && mes == "6"){
+            mes = "Junho"
+        }
+
+        if(mes == "07" && mes == "7"){
+            mes = "Julho"
+        }
+
+        if(mes == "08" && mes == "8"){
+            mes = "Agosto"
+        }
+
+        if(mes == "09" && mes == "9"){
+            mes = "Setembro"
+        }
+
+        if(mes == "10"){
+            mes = "Outubro"
+        }
+
+        if(mes == "11"){
+            mes = "Novembro"
+        }
+
+        if(mes == "12" ){
+            mes = "Dezembro"
+        }
+        resultado = dia + " de " + mes + " de " + ano
+
+        document.getElementById('d').innerHTML = dia;
+        document.getElementById('m').innerHTML = mes;
+        document.getElementById('a').innerHTML = ano;
+        document.getElementById('r').innerHTML = resultado;
+
+    
+    </script>
+</body>
+</html>
